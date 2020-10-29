@@ -1,6 +1,7 @@
 FROM alpine:3.12
 
-LABEL org.opencontainers.image.source="https://github.com/terjesannum/docker-buildx-github-actions-test"
+LABEL org.opencontainers.image.authors="Terje Sannum <terje@offpiste.org>" \
+      org.opencontainers.image.source="https://github.com/terjesannum/docker-buildx-github-actions-test"
 
 RUN uname -a | tee /tmp/uname.out
 
