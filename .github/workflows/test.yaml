@@ -7,8 +7,6 @@ on:
 
 jobs:
   docker:
-    env:
-      IMAGE_NAME: buildx-test
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -29,4 +27,4 @@ jobs:
       with:
         platforms: linux/amd64,linux/arm/v7
         push: true
-        tags: ghcr.io/${{ github.repository }}/foo:1
+        tags: ghcr.io/${{ github.repository }}/buildx-test:${{ github.ref }}
