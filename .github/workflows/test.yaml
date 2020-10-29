@@ -8,7 +8,7 @@ on:
 jobs:
   docker:
     env:
-      IMAGE_NAME: foo
+      IMAGE_NAME: buildx-test
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
